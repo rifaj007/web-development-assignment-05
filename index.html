@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Ticket</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>P-Ticket</title>
 </head>
 <!-- external css -->
 <link rel="stylesheet" href="css/styles.css">
@@ -14,14 +14,114 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <body>
+   <!-- header start -->
+   <header class="px-container raleway-font pt-9">
+      <!-- nav bar start -->
+      <div class="navbar px-0">
+         <div class="navbar-start">
+            <div class="dropdown">
+               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+               </div>
+               <ul tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+               </ul>
+            </div>
+            <a class="text-4xl font-extrabold">P-Ticket</a>
+         </div>
+         <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#030712B3] text-lg font-medium gap-6">
+               <li><a>Home</a></li>
+               <li><a>About</a></li>
+               <li><a>Destination</a></li>
+               <li><a>Search</a></li>
+            </ul>
+         </div>
+         <div class="navbar-end">
+            <a
+               class="btn text-xl raleway-font font-bold text-[#1DD100] bg-[#1DD1001A] border border-[#1DD10066] px-8 min-h-14">Bus
+               <img src="images/bus-icon.png" alt=""></a>
+         </div>
+      </div>
+      <!-- nav bar end -->
+   </header>
+   <!-- header end -->
 
-  <header></header>
-  <main></main>
-  <footer></footer>
+   <!-- main start -->
+   <main class="px-container">
+      <!-- banner section start -->
+      <section>
+         <div class=" min-h-[550px]" style="background-image: url(images/banner.png);">
+            <!-- banner inside content start -->
+            <div class="flex justify-center">
+               <div class="max-w-[740px] text-white raleway-font text-center pt-[70px]">
+                  <h1 class="mb-4 text-[64px] font-extrabold leading-[86px]">End-to-End Travel with <br> <span
+                        class="text-[#1DD100]">P Paribahan</span></h1>
+                  <p class="mb-8 text-lg inter-font font-normal">Yes, you can run unit tests and view the results
+                     directly within the app. The integrated testing features allow for a streamlined .</p>
+                  <button
+                     class="btn text-[#030712] text-xl font-bold bg-[#1DD100] border-[#1DD100] px-7 min-h-16 rounded-xl">Buy
+                     Tickets</button>
+               </div>
+            </div>
+            <!-- banner inside content end -->
 
-  <!-- external js -->
-  <script src="script/utility.js"></script>
-  <script src="script/index.js"></script>
+            <!-- banner card container start -->
+            <div class="banner-container relative -bottom-[75px] flex justify-center gap-6">
+               <!-- card 1 start -->
+               <div class="flex items-center gap-4 bg-white rounded-3xl inter-font p-8 pr-14 border-b-[3px] border-[#1DD100]">
+                  <div>
+                     <img src="images/people.png" alt="">
+                  </div>
+                  <div class="">
+                     <h1 class="text-4xl font-bold text-[#030712]">500K+</h1>
+                     <span class="text-[#03071299] text-lg">Registered users</span>
+                  </div>
+               </div>
+               <!-- card 1 end -->
+
+               <!-- card 2 start -->
+               <div class="flex items-center gap-4 bg-white rounded-3xl inter-font p-8 pr-14 border-b-[3px] border-[#1DD100]">
+                  <div>
+                     <img src="images/ticket-cupon.png" alt="">
+                  </div>
+                  <div class="">
+                     <h1 class="text-4xl font-bold text-[#030712]">1.7 lacks</h1>
+                     <span class="text-[#03071299] text-lg">Tickets sold</span>
+                  </div>
+               </div>
+               <!-- card 2 end -->
+
+               <!-- card 3 start -->
+               <div class="flex items-center gap-4 bg-white rounded-3xl inter-font p-8 pr-14 border-b-[3px] border-[#1DD100]">
+                  <div>
+                     <img src="images/stoppage.png" alt="">
+                  </div>
+                  <div class="">
+                     <h1 class="text-4xl font-bold text-[#030712]">80K+</h1>
+                     <span class="text-[#03071299] text-lg">Rental partners</span>
+                  </div>
+               </div>
+               <!-- card 3 end -->
+            </div>
+            <!-- banner card container end -->
+         </div>
+      </section>
+      <!-- banner section end -->
+   </main>
+   <!-- main end -->
+   <footer></footer>
+
+   <!-- external js -->
+   <script src="script/utility.js"></script>
+   <script src="script/index.js"></script>
 </body>
 
 </html>
