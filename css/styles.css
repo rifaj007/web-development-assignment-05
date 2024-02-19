@@ -19,3 +19,9 @@ body {
 .raleway-font {
   font-family: "Raleway", sans-serif;
 }
+
+.seat-head {
+   font-size: 18px;
+   font-weight: 500;
+   color: #03071280;
+}

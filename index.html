@@ -167,7 +167,7 @@
 
          <!-- see all button start -->
          <div class="text-center">
-            <a class="text-[#1DD100] text-xl py-5 px-8 inline-block rounded-xl font-bold border-2 border-[#1DD100]"
+            <a class="text-[#1DD100] text-xl py-5 px-8 inline-block rounded-xl font-bold border-2 border-[#1DD100] hover:bg-[#1DD100] hover:text-white duration-300"
                href="#">See All Offers</a>
          </div>
          <!-- see all button end -->
@@ -175,7 +175,8 @@
       <!-- best offer section end -->
 
       <!-- P.H Paribahan section start -->
-      <section id="paribahan-section" class="bg-[#F7F8F8] rounded-t-[88px] border-t-2 border-[#1DD100] pt-[120px]">
+      <section id="paribahan-section"
+         class="bg-[#F7F8F8] rounded-t-[88px] border-t-2 border-[#1DD100] pt-[120px] pb-[120px]">
          <!-- container start -->
          <div class="px-container">
             <!-- section tittle start -->
@@ -192,7 +193,7 @@
                <!-- left start -->
                <div class="max-w-[872px] w-full p-8">
                   <!-- Poribahan head start -->
-                  <div class="flex justify-between items-center mb-6">
+                  <div class="flex justify-between items-center mb-4">
                      <!-- head left start -->
                      <div class="flex items-center gap-4">
                         <div><img src="images/bus-logo.png" alt=""></div>
@@ -215,10 +216,10 @@
                   </div>
                   <!-- Poribahan head end -->
 
-                  <!-- Poribahan main body start -->
+                  <!-- Poribahan info main body start -->
                   <div class="bg-[#F7F8F8] rounded-3xl p-8">
                      <!-- 1 -->
-                     <div class="flex justify-between border-b-2 border-[#03071233] border-dashed pb-5 mb-6">
+                     <div class="flex justify-between border-b-2 border-[#03071233] border-dashed pb-5 mb-5">
                         <div>
                            <h3 class="text-[#03071299] text-lg font-semibold raleway-font">Route</h3>
                         </div>
@@ -227,7 +228,7 @@
                         </div>
                      </div>
                      <!-- 2 -->
-                     <div class="flex justify-between border-b-2 border-[#03071233] border-dashed pb-5 mb-6">
+                     <div class="flex justify-between border-b-2 border-[#03071233] border-dashed pb-5 mb-5">
                         <div>
                            <h3 class="text-[#03071299] text-lg font-semibold raleway-font">Departure Time</h3>
                         </div>
@@ -248,30 +249,515 @@
                         </div>
                      </div>
                   </div>
-                  <!-- Poribahan main body end -->
+                  <!-- Poribahan info main body end -->
                </div>
                <!-- left end -->
 
                <!-- middle start -->
-               <div>
+               <div class="h-full">
                   <img src="images/info-devider.png" alt="">
                </div>
                <!-- middle end -->
 
                <!-- right start -->
                <div class="max-w-[220px] w-full flex flex-col items-center justify-center raleway-font text-center">
-                     <img src="images/fare.png" alt="">
-                     <h2 class="text-[#030712] text-[32px] font-bold pt-4 pb-2">550 Taka</h2>
-                     <p class="text-[#03071299] text-2xl font-semibold">Per Seat</p>
+                  <img src="images/fare.png" alt="">
+                  <h2 class="text-[#030712] text-[32px] font-bold pt-4 pb-2">550 Taka</h2>
+                  <p class="text-[#03071299] text-2xl font-semibold">Per Seat</p>
                </div>
                <!-- right end -->
             </div>
             <!-- Paribahan Info section end -->
 
 
-            <!-- Paribahan main section start -->
-            <div></div>
-            <!-- Paribahan main section end -->
+            <!-- Paribahan main content section start -->
+            <div class="bg-white rounded-3xl mt-6">
+               <!-- main conetent container start -->
+               <div class="flex p-8">
+                  <!-- left section start -->
+                  <div class="max-w-[640px] w-full border-r-2 border-[#03071233] border-dashed pr-8">
+
+                     <!-- sub section tittle start -->
+                     <div class="border-b-2 border-[#03071233] border-dashed pb-5 mb-4 ">
+                        <h1 class="text-2xl text-[#030712] font-semibold">Select Your Seat</h1>
+                     </div>
+                     <!-- sub section tittle end -->
+
+                     <!-- left section header start -->
+                     <div class="flex justify-between border-b-2 border-[#03071233] border-dashed p-4 mb-6">
+                        <div class="flex gap-2"> <img src="images/seat-gray.png" alt=""> <span
+                              class="text-[#03071280] text-lg font-medium">Available</span></div>
+                        <div class="flex gap-2"> <img src="images/seat-green-filled.png" alt=""> <span
+                              class="text-[#1DD100] text-lg font-medium">Selected</span></div>
+                     </div>
+                     <!-- left section header end -->
+
+                     <!-- wheel section start -->
+                     <div class="flex justify-end mb-6">
+                        <div class="w-28 h-14 bg-[#0307121A] rounded-xl flex items-center justify-center"><img
+                              src="images/wheel.png" alt=""></div>
+                     </div>
+                     <!-- wheel section end -->
+
+                     <!-- seat section start -->
+                     <div>
+                        <!-- seat container 1 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">A</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">A1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">A2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">A3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">A4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 1 end -->
+
+                        <!-- seat container 2 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">B</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">B1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">B2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">B3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">B4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 2 end -->
+
+                        <!-- seat container 3 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">C</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">C1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">C2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">C3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">C4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 3 end -->
+
+                        <!-- seat container 4 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">D</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">D1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">D2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">D3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">D4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 4 end -->
+
+                        <!-- seat container 5 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">E</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">E1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">E2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">E3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">E4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 5 end -->
+
+                        <!-- seat container 6 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">F</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">F1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">F2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">F3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">F4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 6 end -->
+
+                        <!-- seat container 7 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">G</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">G1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">G2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">G3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">G4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 7 end -->
+
+                        <!-- seat container 8 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">H</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">H1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">H2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">H3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">H4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 8 end -->
+
+                        <!-- seat container 9 start -->
+                        <div class="flex items-center gap-4 mb-6">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">I</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">I1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">I2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">I3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">I4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 9 end -->
+
+                        <!-- seat container 10 start -->
+                        <div class="flex items-center gap-4">
+                           <!-- head -->
+                           <div>
+                              <p class="seat-head">J</p>
+                           </div>
+
+                           <!-- body -->
+                           <div class="flex gap-16">
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">J1</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">J2</button>
+                                 </div>
+                              </div>
+
+                              <div class="flex gap-8">
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">J3</button>
+                                 </div>
+                                 <div>
+                                    <button
+                                       class="btn seat text-[#03071280] hover:bg-[#1DD100] hover:text-white hover:border-[#1DD100] w-28 h-14">J4</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- seat container 10 end -->
+                     </div>
+                     <!-- seat section end -->
+
+                  </div>
+                  <!-- left section end -->
+
+                  <!-- right section start -->
+                  <div class="pl-8 max-w-[465px] w-full">
+                     <!-- sub section tittle start -->
+                     <div class="border-b-2 border-[#03071233] border-dashed pb-5 mb-4">
+                        <h1 class="text-2xl text-[#030712] font-semibold">Select Your Seat</h1>
+                     </div>
+                     <!-- sub section tittle end -->
+
+                     <!-- display section start -->
+                     <div class="p-8 bg-[#F7F8F8] rounded-xl mb-6">
+                        <!-- display heading start -->
+                        <div class="flex justify-between border-b-2 border-[#03071233] border-dashed pb-4">
+                           <div class="flex gap-1 items-center">
+                              <h2 class="text-[#030712] text-base font-medium">Seat</h2>
+                              <span
+                                 class="text-white text-xs font-bold bg-[#1DD100] rounded-[5px] text-center px-2 h-4">3</span>
+                           </div>
+                           <div>
+                              <h2 class="text-[#030712] text-base font-medium">Class</h2>
+                           </div>
+                           <div>
+                              <h2 class="text-[#030712] text-base font-medium">Price</h2>
+                           </div>
+                        </div>
+                        <!-- display heading end -->
+
+                        <!-- display main start -->
+                        <div class="py-4 border-b border-[#03071233] mb-4">
+                           <!-- tittle 1 start -->
+                           <div class="flex justify-between text-[#03071299] text-base mb-4">
+                              <p>C2</p>
+                              <p>Economoy</p>
+                              <p>550</p>
+                           </div>
+                           <!-- tittle 1 end -->
+
+                           <!-- tittle 2 start -->
+                           <div class="flex justify-between text-[#03071299] text-base">
+                              <p>C2</p>
+                              <p>Economoy</p>
+                              <p>550</p>
+                           </div>
+                           <!-- tittle 2 end -->
+                        </div>
+                        <!-- display main end -->
+
+                        <!-- total price start -->
+                        <div class="flex justify-between text-[#030712] text-base font-medium mb-4">
+                           <h2>Total Price</h2>
+                           <h2>BDT <span>1100</span></h2>
+                        </div>
+                        <!-- total price end -->
+
+                        <!-- coupon start -->
+                        <div class="relative mb-6">
+                           <input class="w-full h-14 bg-white pl-5 rounded-xl text-[14px]" type="text"
+                              placeholder="Have any copupon?">
+                           <button
+                              class="bg-[#1DD100] text-white text-base font-semibold py-2 px-4 rounded-lg absolute right-2 top-2 bottom-2">Apply</button>
+                        </div>
+                        <!-- coupon start -->
+
+                        <!-- grand total price start -->
+                        <div class="flex justify-between text-[#030712] text-base font-medium">
+                           <h2>Grand Total</h2>
+                           <h2>BDT <span>1100</span></h2>
+                        </div>
+                        <!-- grand total price end -->
+                     </div>
+                     <!-- display section end -->
+
+                     <!-- form section start -->
+                     <div>
+                        <form action="#">
+                           <!-- name -->
+                           <div class="mb-6">
+                              <p class="text-[#030712] text-base font-semibold mb-4">Passenger Name*</p>
+                              <input class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="text"
+                                 name="Name" placeholder="Enter your name">
+                           </div>
+                           <!-- phone number -->
+                           <div class="mb-6">
+                              <p class="text-[#030712] text-base font-semibold mb-4">Phone Number*</p>
+                              <input class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="tel"
+                                 name="Name" placeholder="Enter your phone number">
+                           </div>
+                           <!-- email -->
+                           <div class="mb-6">
+                              <p class="text-[#030712] text-base font-semibold mb-4">Email ID</p>
+                              <input class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6"
+                                 type="email" name="Name" placeholder="Enter your name">
+                           </div>
+
+                           <button
+                              class="bg-[#1DD100] text-white w-full rounded-2xl raleway-font text-xl font-extrabold h-16 mb-6 disabled:"
+                              type="submit">Next</button>
+
+                           <!-- terms and condition start -->
+                           <div class="flex justify-around">
+                              <a class="underline text-[#03071299] text-base" href="#">Terms and Conditions</a>
+                              <a class="underline text-[#03071299] text-base" href="#">Cancellation Policy</a>
+                           </div>
+                           <!-- terms and condition start -->
+                        </form>
+                     </div>
+                     <!-- form section end -->
+                  </div>
+                  <!-- right section start -->
+               </div>
+               <!-- main conetent container end -->
+            </div>
+            <!-- Paribahan main content section end -->
          </div>
          <!-- container end -->
       </section>
@@ -323,6 +809,20 @@
       <!-- footer container end -->
    </footer>
    <!-- fooeter section end -->
+
+   <!-- pop up section start -->
+   <div class="absolute z-50">
+      <div class="bg-white w-[720px] text-center rounded-2xl flex flex-col justify-center">
+         <div><img src="images/success.png" alt=""></div>
+         <div>
+            <h1 class="text-2xl font-bold text-[#27AE60] uppercase">SUCCESS</h1>
+            <p class="text-xl font-medium text-[#4A4A4A]">Thank you for Booking Our Bus Seats.
+               We are working hard to find the best service and deals for you.
+               <span class="font-light"> Shortly you will find a confirmation in your email.</span></p>
+         </div>
+      </div>
+   </div>
+   <!-- pop up section end -->
 
    <!-- external js -->
    <script src="script/utility.js"></script>
