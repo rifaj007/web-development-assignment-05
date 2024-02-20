@@ -24,4 +24,10 @@ body {
    font-size: 18px;
    font-weight: 500;
    color: #03071280;
+   width: 20px;
+}
+
+#apply-button:disabled {
+   background-color: #F7F8F8;
+   color: #03071280;
 }
