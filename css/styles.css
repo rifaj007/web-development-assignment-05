@@ -31,3 +31,8 @@ body {
    background-color: #F7F8F8;
    color: #03071280;
 }
+
+.seat:disabled {
+   background-color: #1DD100!important;
+   color: white!important;
+}

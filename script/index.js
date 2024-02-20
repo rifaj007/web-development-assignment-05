@@ -1,17 +1,21 @@
 // select all the seat
 const seats = document.querySelectorAll('.seat');
 
-let count = 0;
-
 for (const seat of seats) {
-   seat.addEventListener('click', function () {
-      // *********** set bg color ***********
+   seat.addEventListener('click', function (event) {
 
+      // seat select limitation
+      const getTotalAmount = getElementValueById('total-price-display');
+      if (getTotalAmount >= (4 * 550)) {
+         alert("You cannot select more than 4");
+         return;
+      }
 
       // get seat name
-      const seatText = seat.innerText;
+      const seatText = event.target.innerText;
 
       //  *********** display the seat ***********
+      // get the container where to display
       const displayContainer = document.getElementById('display-container');
 
       // create elements
@@ -32,26 +36,16 @@ for (const seat of seats) {
       newDiv.classList.add('text-base');
       newDiv.classList.add('mb-4');
 
-      if (this.classList.contains('bg-[#1DD100]', 'text-white')) {
-         this.classList.remove('bg-[#1DD100]');
-         this.classList.remove('text-white');
+      // add child to parent
+      displayContainer.appendChild(newDiv);
+      newDiv.appendChild(p1);
+      newDiv.appendChild(p2);
+      newDiv.appendChild(p3);
 
-         // remove child to parent
-         newDiv.classList.add('hiddden');
-
-      } else {
-         this.classList.add('bg-[#1DD100]');
-         this.classList.add('text-white');
-
-         // add child to parent
-         displayContainer.appendChild(newDiv);
-         newDiv.appendChild(p1);
-         newDiv.appendChild(p2);
-         newDiv.appendChild(p3);
-      }
+      // disable button to prevent double click
+      event.target.setAttribute("disabled", false);
 
       // *********** decrease available seat ***********
-      // decrease from available seat
       const availableSeat = getElementValueById('available-seat');
       const updatedAvailableSeat = availableSeat - 1;
       displayElementById('available-seat', updatedAvailableSeat);
@@ -65,22 +59,13 @@ for (const seat of seats) {
       const totalPrice = updatedSecletedTotalSeat * 550;
       displayElementById('total-price-display', totalPrice);
 
-
       // *********** Grand Total Price ***********
-     const grandTotalPrice = totalPrice;
+      const grandTotalPrice = totalPrice;
       displayElementById('grand-total-price-display', grandTotalPrice);
-
-
-      // // no reapet add at same button
-      // if (seat.classList.contains('bg-[#1DD100]')) {
-      //    return;
-      // }
-
    })
 };
 
-
-// discount 
+// // discount 
 document.getElementById('coupon-inputField').addEventListener('keyup', function (event) {
    const text = event.target.value;
    const applyButton = document.getElementById('apply-button');
@@ -89,34 +74,33 @@ document.getElementById('coupon-inputField').addEventListener('keyup', function 
 
       if (text === 'NEW15') {
          const getTotalPrice = getElementValueById('total-price-display');
-         const dicountPrice = getTotalPrice * 0.15;
+         const dicountPrice = (getTotalPrice * 0.15).toFixed();
          displayElementById('discount-amount', dicountPrice)
 
       } else {
          const getTotalPrice = getElementValueById('total-price-display');
-         const dicountPrice = getTotalPrice * 0.20;
+         const dicountPrice = (getTotalPrice * 0.20).toFixed();
          displayElementById('discount-amount', dicountPrice)
       }
    } else {
       applyButton.setAttribute('disabled', true);
    }
+});
+
+// apply discount 
+document.getElementById('apply-button').addEventListener('click', function () {
 
    // discount after coupon grand total price
    const disTotalPrice = getElementValueById('total-price-display');
-   console.log(disTotalPrice);
    const discountPriceAfterCoupon = getElementValueById('discount-amount');
-   console.log(discountPriceAfterCoupon);
    const disGrandTotalPrice = disTotalPrice - discountPriceAfterCoupon;
 
    displayElementById('grand-total-price-display', disGrandTotalPrice);
-});
 
-
-// hide coupon code
-document.getElementById('apply-button').addEventListener('click', function () {
+   // hide the coupon input field
    const couponFieldDelete = document.getElementById('delete-coupon');
    couponFieldDelete.style.display = 'none';
 
    const discountcontainer = document.getElementById('discount-container');
    discountcontainer.classList.remove('hidden');
-})
+});
