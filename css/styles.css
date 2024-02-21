@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-	max-width: 1440px;
-	margin: 0 auto!important;
-	font-family: "Inter", sans-serif;
+   max-width: 1440px;
+   margin: 0 auto !important;
+   font-family: "Inter", sans-serif;
 }
 
 .px-container {
-	padding: 0 135px;
+   padding: 0 135px;
 }
 
 /* font familly */
 .inter-font {
-  font-family: "Inter", sans-serif;
+   font-family: "Inter", sans-serif;
 }
 
 .raleway-font {
-  font-family: "Raleway", sans-serif;
+   font-family: "Raleway", sans-serif;
 }
 
 .seat-head {
@@ -28,11 +28,16 @@ body {
 }
 
 #apply-button:disabled {
-   background-color: #F7F8F8;
+   background-color: #0307121A;
+   color: #03071280;
+}
+
+#form-next-button:disabled {
+   background-color: #0307121A;
    color: #03071280;
 }
 
 .seat:disabled {
-   background-color: #1DD100!important;
-   color: white!important;
+   background-color: #1DD100 !important;
+   color: white !important;
 }

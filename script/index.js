@@ -62,15 +62,34 @@ for (const seat of seats) {
       // *********** Grand Total Price ***********
       const grandTotalPrice = totalPrice;
       displayElementById('grand-total-price-display', grandTotalPrice);
+
+      // apply button enable
+      const applyButton = document.getElementById('apply-button');
+      if (updatedSecletedTotalSeat == 4) {
+         applyButton.removeAttribute('disabled');
+      } else {
+         applyButton.setAttribute('disabled', true);
+      }
    })
 };
 
-// // discount 
+
+
+// coupon
 document.getElementById('coupon-inputField').addEventListener('keyup', function (event) {
+
+   const selectedTotalSeat = getElementValueById('select-total-seat');
+   if (selectedTotalSeat < 4) {
+      alert('You have to select 4 seat to get discount');
+
+      const couponInputField = document.getElementById('coupon-inputField');
+      couponInputField.value = '';
+
+      return
+   }
+
    const text = event.target.value;
-   const applyButton = document.getElementById('apply-button');
    if (text === 'NEW15' || text === 'Couple 20') {
-      applyButton.removeAttribute('disabled');
 
       if (text === 'NEW15') {
          const getTotalPrice = getElementValueById('total-price-display');
@@ -83,7 +102,7 @@ document.getElementById('coupon-inputField').addEventListener('keyup', function 
          displayElementById('discount-amount', dicountPrice)
       }
    } else {
-      applyButton.setAttribute('disabled', true);
+      displayElementById('discount-amount', 0)
    }
 });
 
@@ -93,8 +112,20 @@ document.getElementById('apply-button').addEventListener('click', function () {
    // discount after coupon grand total price
    const disTotalPrice = getElementValueById('total-price-display');
    const discountPriceAfterCoupon = getElementValueById('discount-amount');
+
+   // for invalid coupon
+   if (discountPriceAfterCoupon == 0) {
+      alert('Invalid coupon code!')
+
+      const couponInputField = document.getElementById('coupon-inputField');
+      couponInputField.value = '';
+      return;
+   }
+
+   // sum of grand total price
    const disGrandTotalPrice = disTotalPrice - discountPriceAfterCoupon;
 
+   // display discount
    displayElementById('grand-total-price-display', disGrandTotalPrice);
 
    // hide the coupon input field
@@ -103,4 +134,44 @@ document.getElementById('apply-button').addEventListener('click', function () {
 
    const discountcontainer = document.getElementById('discount-container');
    discountcontainer.classList.remove('hidden');
+
+   // clear input field
+   const couponInputField = document.getElementById('coupon-inputField');
+   couponInputField.value = '';
+
+   // apply button disabled
+   const applyButton = document.getElementById('apply-button');
+   applyButton.setAttribute('disabled', true);
 });
+
+
+// form button enable
+const nameInput = document.getElementById('name-input-field');
+const phoneInput = document.getElementById('phone-input-field');
+const emailInput = document.getElementById('email-input-field');
+const formNextButton = document.getElementById('form-next-button');
+
+// Function to check if all input fields are filled
+function checkInputs() {
+   const name = nameInput.value.trim();
+   const phone = phoneInput.value.trim();
+   const email = emailInput.value.trim();
+   const totalPriceDisplay = getElementValueById('total-price-display');
+
+   // If all fields are filled, remove disabled attribute from next button
+   if (name !== '' && phone !== '' && email !== '' && totalPriceDisplay > 0) {
+      formNextButton.removeAttribute('disabled');
+   } else {
+      formNextButton.setAttribute('disabled', true);
+   }
+}
+
+nameInput.value = '';
+phoneInput.value = '';
+emailInput.value = '';
+formNextButton.setAttribute('disabled', true);
+
+// Add event listeners to input fields to check for changes
+nameInput.addEventListener('input', checkInputs);
+phoneInput.addEventListener('input', checkInputs);
+emailInput.addEventListener('input', checkInputs);

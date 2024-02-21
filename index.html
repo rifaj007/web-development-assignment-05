@@ -209,7 +209,7 @@
                      <div>
                         <button
                            class="flex gap-2 bg-[#1DD10026] px-[15px] py-[14px] rounded-xl text-[#1DD100] text-lg font-medium"><img
-                              src="images/seat-green.png" alt=""> <span  id="available-seat">40</span> Seats
+                              src="images/seat-green.png" alt=""> <span id="available-seat">40</span> Seats
                            left</button>
                      </div>
                      <!-- head right end -->
@@ -686,7 +686,8 @@
                         <!-- total price end -->
 
                         <!-- discount price start -->
-                        <div id="discount-container" class="flex justify-between text-[#030712] text-base font-medium mb-4 hidden">
+                        <div id="discount-container"
+                           class="flex justify-between text-[#030712] text-base font-medium mb-4 hidden">
                            <h2>Discount Price</h2>
                            <h2>BDT <span id="discount-amount">0</span></h2>
                         </div>
@@ -717,33 +718,36 @@
                            <!-- name -->
                            <div class="mb-6">
                               <p class="text-[#030712] text-base font-semibold mb-4">Passenger Name*</p>
-                              <input class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="text"
+                              <input id="name-input-field"
+                                 class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="text"
                                  name="Name" placeholder="Enter your name">
                            </div>
                            <!-- phone number -->
                            <div class="mb-6">
                               <p class="text-[#030712] text-base font-semibold mb-4">Phone Number*</p>
-                              <input class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="tel"
+                              <input id="phone-input-field"
+                                 class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="tel"
                                  name="Name" placeholder="Enter your phone number">
                            </div>
                            <!-- email -->
                            <div class="mb-6">
                               <p class="text-[#030712] text-base font-semibold mb-4">Email ID</p>
-                              <input class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6"
-                                 type="email" name="Name" placeholder="Enter your name">
+                              <input id="email-input-field"
+                                 class="border border-[#0307121A] text-base rounded-xl w-full h-16 pl-6" type="email"
+                                 name="Name" placeholder="Enter your name">
                            </div>
-
-                           <button
-                              class="bg-[#1DD100] text-white w-full rounded-2xl raleway-font text-xl font-extrabold h-16 mb-6 disabled:"
-                              type="submit">Next</button>
-
-                           <!-- terms and condition start -->
-                           <div class="flex justify-around">
-                              <a class="underline text-[#03071299] text-base" href="#">Terms and Conditions</a>
-                              <a class="underline text-[#03071299] text-base" href="#">Cancellation Policy</a>
-                           </div>
-                           <!-- terms and condition start -->
                         </form>
+                        <!-- form next button start -->
+                        <a href="#my_modal_8"><button id="form-next-button" disabled
+                              class="bg-[#1DD100] text-white w-full rounded-2xl raleway-font text-xl font-extrabold h-16 mb-6">Next</button></a>
+                        <!-- form next button end -->
+
+                        <!-- terms and condition start -->
+                        <div class="flex justify-around">
+                           <a class="underline text-[#03071299] text-base" href="#">Terms and Conditions</a>
+                           <a class="underline text-[#03071299] text-base" href="#">Cancellation Policy</a>
+                        </div>
+                        <!-- terms and condition end -->
                      </div>
                      <!-- form section end -->
                   </div>
@@ -804,10 +808,11 @@
    </footer>
    <!-- fooeter section end -->
 
+
    <!-- pop up section start -->
-   <div class="flex justify-center ">
+   <div class="modal flex justify-center " role="dialog" id="my_modal_8">
       <div
-         class="bg-white w-[720px] h-[480px] px-14  py-14 text-center rounded-2xl flex flex-col justify-center items-center">
+         class="modal-box bg-white max-w-[720px] max-h-[500px] px-14  py-12 text-center rounded-2xl flex flex-col justify-center items-center">
          <div class="mb-8"><img src="images/success.png" alt=""></div>
          <div class="mb-5">
             <h1 class="text-2xl font-bold text-[#27AE60] uppercase mb-7">SUCCESS</h1>
@@ -817,8 +822,10 @@
             <span class="text-xl font-light text-[#4A4A4A]"> Shortly you will find a confirmation in your email.</span>
          </div>
 
-         <button
-            class="btn btn-success text-white text-xl font-semibold rounded-3xl bg-[#27AE60] w-[300px] h-14">Continue</button>
+         <div class="modal-action">
+            <a href="index.html"> <button
+                  class="btn btn-success text-white text-xl font-semibold rounded-3xl bg-[#27AE60] w-[300px] h-14">Continue</button></a>
+         </div>
       </div>
    </div>
    <!-- pop up section end -->
